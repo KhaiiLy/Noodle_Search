@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INIZIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="search-form">
+            <h1>Noodle</h1>
+            <div class="search-bar">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input id="search-input" type="text" name="search" placeholder="Search ...">
+            </div>
+            <div class="button-container">
+                <button id="search-btn" type="button">Search</button><br>
+                <div class="bottom-group">
+                    <select id="format-select">
+                        <option value="json">JSON</option>
+                        <option value="csv">CSV</option>
+                        <option value="text">Text</option>
+                    </select>
+                    <button id="download-btn" type="button">Save Results</button>
+                </div>
+            </div>
+        </form>
+        <div id="loading" style="display: none;">Loading...</div>
+        <ul id="results"></ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

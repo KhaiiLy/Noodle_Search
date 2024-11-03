@@ -1,0 +1,121 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-form {
+    margin-top: 25vh;
+    display: grid;
+    flex-direction: column;
+    place-items: center;
+    gap: 10px;
+}
+
+/* Search form items */
+.search-bar {
+    --padding: 12px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: var(--padding);
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    width: 380px;
+}
+
+.search-bar:focus-within {
+    background-color: #f1f1f1;
+    transition: 0.25s;
+}
+
+#search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+#search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+/* Action elements*/
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-btn {
+    width: 70%;
+    height: 4vh;
+}
+
+#download-btn {
+    color: rgb(0, 76, 255);
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 15px;
+
+}
+
+.bottom-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* Result container styles */
+#results {
+    flex: 1;
+    list-style-type: none;
+    /* padding-left: 70px; */
+    margin: 20px 0;
+}
+
+#results li {
+    margin: 10px 20px;
+    padding: 5px 0;
+}
+
+#results li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #1d61ff;
+}
+
+#results li p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Loading indicator */
+#loading {
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+}
